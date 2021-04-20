@@ -25,3 +25,37 @@ body{
 .fondo-lista{
     background-color: #578a8c;
 }
+
+
+.item-trash{
+    display: none;
+}
+li:hover .item-trash{
+    display: inline;
+}
+
+.perspectiva {
+    
+    perspective: 250px;
+}
+
+* {  
+    transition: all 1.2s ease-out;
+}
+.list-group-item {
+    z-index: 1;
+    // transform: translateZ(3em);
+    transition: all 1s ease-out;
+}
+
+.list-group-item:hover{
+    
+    z-index: 10;
+    transform: translateZ(150px) rotateY(45deg);
+    transform:  scale(1.2);
+
+}
+
+// :hover {
+
+// }
